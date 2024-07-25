@@ -15,10 +15,13 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, KonohacraftMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> KONOHACRAFT_TAB = CREATIVE_MODE_TABS.register("konohacraft_tab",
-                    () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STEELPLATE.get()))
+                    () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METALPLATE.get()))
                             .title(Component.translatable("creativetab.konogacraft_tab"))
                             .displayItems((itemDisplayParameters, output) -> {
-                                output.accept(ModItems.STEELPLATE.get());
+                                output.accept(ModItems.METALPLATE.get());
+                                output.accept(ModItems.GOLDPLATE.get());
+                                output.accept(ModItems.DIAMONDPLATE.get());
+                                output.accept(ModItems.NETHERITEPLATE.get());
                                 // item to creativetable
                             })
                             .build());

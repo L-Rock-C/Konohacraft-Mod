@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#&"
+  ],
+  "key": {
+    "#": {
+      "item": "konohacraftmod:diamondplate"
+    },
+    "&": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "konohacraftmod:netheriteplate",
+    "count": 1
+  }
+}

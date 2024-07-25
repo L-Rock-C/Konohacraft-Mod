@@ -12,7 +12,13 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, KonohacraftMod.MOD_ID);
 
-    public static final RegistryObject<Item> STEELPLATE = ITEMS.register("steelplate",
+    public static final RegistryObject<Item> METALPLATE = ITEMS.register("metalplate",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GOLDPLATE = ITEMS.register("goldplate",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DIAMONDPLATE = ITEMS.register("diamondplate",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NETHERITEPLATE = ITEMS.register("netheriteplate",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#&"
+  ],
+  "key": {
+    "#": {
+      "item": "konohacraftmod:metalplate"
+    },
+    "&": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "konohacraftmod:goldplate",
+    "count": 1
+  }
+}

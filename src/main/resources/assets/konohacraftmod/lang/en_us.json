@@ -1,4 +1,7 @@
 {
-  "item.konohacraftmod.steelplate": "Steel Plate",
+  "item.konohacraftmod.metalplate": "Metal Plate",
+  "item.konohacraftmod.goldplate": "Gold Plate",
+  "item.konohacraftmod.diamondplate": "Diamond Plate",
+  "item.konohacraftmod.netheriteplate": "Netherite Plate",
   "creativetab.konogacraft_tab": "Konohacraft Tab"
 }

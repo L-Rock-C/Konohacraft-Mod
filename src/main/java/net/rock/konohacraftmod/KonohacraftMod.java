@@ -44,7 +44,10 @@ public class KonohacraftMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.STEELPLATE);
+            event.accept(ModItems.METALPLATE);
+            event.accept(ModItems.GOLDPLATE);
+            event.accept(ModItems.DIAMONDPLATE);
+            event.accept(ModItems.NETHERITEPLATE);
         }
     }
 
