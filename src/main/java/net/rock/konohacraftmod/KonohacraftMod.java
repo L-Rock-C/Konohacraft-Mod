@@ -14,6 +14,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.rock.konohacraftmod.block.ModBlock;
 import net.rock.konohacraftmod.item.ModCreativeModTabs;
 import net.rock.konohacraftmod.item.ModItems;
 import org.slf4j.Logger;
@@ -31,6 +32,7 @@ public class KonohacraftMod
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlock.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -43,12 +45,6 @@ public class KonohacraftMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.METALPLATE);
-            event.accept(ModItems.GOLDPLATE);
-            event.accept(ModItems.DIAMONDPLATE);
-            event.accept(ModItems.NETHERITEPLATE);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

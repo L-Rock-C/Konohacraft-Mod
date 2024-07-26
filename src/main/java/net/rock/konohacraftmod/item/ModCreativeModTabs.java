@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.rock.konohacraftmod.KonohacraftMod;
+import net.rock.konohacraftmod.block.ModBlock;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -22,6 +23,11 @@ public class ModCreativeModTabs {
                                 output.accept(ModItems.GOLDPLATE.get());
                                 output.accept(ModItems.DIAMONDPLATE.get());
                                 output.accept(ModItems.NETHERITEPLATE.get());
+
+                                output.accept(ModItems.SHURIKEN.get());
+                                output.accept(ModItems.KUNAI.get());
+
+                                output.accept(ModBlock.FORGE_TABLE.get());
                                 // item to creativetable
                             })
                             .build());

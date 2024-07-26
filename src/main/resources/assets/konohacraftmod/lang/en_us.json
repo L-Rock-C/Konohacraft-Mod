@@ -3,5 +3,11 @@
   "item.konohacraftmod.goldplate": "Gold Plate",
   "item.konohacraftmod.diamondplate": "Diamond Plate",
   "item.konohacraftmod.netheriteplate": "Netherite Plate",
-  "creativetab.konogacraft_tab": "Konohacraft Tab"
+
+  "item.konohacraftmod.shuriken": "Shuriken",
+  "item.konohacraftmod.kunai": "Kunai",
+
+  "block.konohacraftmod.forge_table": "Forge",
+
+  "creativetab.konogacraft_tab": "Konohacraft"
 }
