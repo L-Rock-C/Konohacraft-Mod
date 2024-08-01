@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rock.konohacraftmod.KonohacraftMod;
+import net.rock.konohacraftmod.item.custom.RasenshurikenItem;
 
 public class ModItems {
 
@@ -25,6 +26,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> KUNAI = ITEMS.register("kunai",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RASENSHURIKEN = ITEMS.register("rasenshuriken",
+            () -> new RasenshurikenItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

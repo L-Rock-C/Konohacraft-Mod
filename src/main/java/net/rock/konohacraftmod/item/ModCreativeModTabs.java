@@ -27,6 +27,8 @@ public class ModCreativeModTabs {
                                 output.accept(ModItems.SHURIKEN.get());
                                 output.accept(ModItems.KUNAI.get());
 
+                                output.accept(ModItems.RASENSHURIKEN.get());
+
                                 output.accept(ModBlock.FORGE_TABLE.get());
                                 // item to creativetable
                             })

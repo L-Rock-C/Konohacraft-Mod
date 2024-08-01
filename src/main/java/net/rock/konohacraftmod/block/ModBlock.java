@@ -21,6 +21,7 @@ public class ModBlock {
     public static final RegistryObject<Block> FORGE_TABLE = registerBlock("forge_table",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SMITHING_TABLE)));
 
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

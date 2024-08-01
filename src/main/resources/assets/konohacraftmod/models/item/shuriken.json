@@ -1,6 +1,18 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "konohacraftmod:item/shuriken"
+  "parent": "minecraft:item/hendheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "konohacraftmod:item/shuriken_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "konohacraftmod:item/shuriken_2d"
+    },
+    "ground": {
+      "parent": "konohacraftmod:item/shuriken_2d"
+    },
+    "fixed": {
+      "parent": "konohacraftmod:item/shuriken_2d"
+    }
   }
 }
